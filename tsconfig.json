@@ -1,0 +1,13 @@
+{
+    "files": [
+        "TypeScriptSheets/main.ts"
+    ],
+
+    "compilerOptions": {
+        "removeComments": true,
+        "outDir": "Scripts",
+        "target": "es6",
+        "watch": true
+    }
+
+}

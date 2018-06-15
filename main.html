@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel= "stylesheet" type= "text/css" href= "StyleSheets/mainStyling.css" >
+
+    <script> </script>
+
+    <script src= "Scripts/main.js"> </script>
+
+    <title> Yahtzee </title>
+
+</head>
+
+<body>
+
+    <h1 id = "mainTitle"> Play For Your Life </h1>
+
+    <div id = "mainBoard">
+
+        <div id = "grimSide">
+
+            <div id = "grimScores" >
+
+                <label> Ones </label>
+                <input type="text" disabled id = "gScore1">
+                <br />
+
+                <label> Twos </label>
+                <input type="text" disabled id = "gScore2">
+                <br />
+
+                <label> Threes </label>
+                <input type="text" disabled id = "gScore3">
+                <br />
+
+                <label> Fours </label>
+                <input type="text" disabled id = "gScore4">
+                <br />
+
+                <label> Fives </label>
+                <input type="text" disabled id = "gScore5">
+                <br />
+
+                <label> Sixes </label>
+                <input type="text" disabled id = "gScore6">
+                <br />
+
+                <label> Bonus </label>
+                <input type="text" disabled id = "gScoreBonus">
+                <br />
+
+                <label> Three of a Kind </label>
+                <input type="text" disabled id = "gScoreThreeKind">
+                <br />
+
+                <label> Four of a Kind </label>
+                <input type="text" disabled id = "gScoreFourKind">
+                <br />
+
+                <label> Full House </label>
+                <input type="text" disabled id = "gScoreFullHouse">
+                <br />
+
+                <label> Small Straight </label>
+                <input type="text" disabled id = "gScoreSmall">
+                <br />
+
+                <label> Large Straight </label>
+                <input type="text" disabled id = "gScoreLarge">
+                <br />
+
+                <label> Chance </label>
+                <input type="text" disabled id = "gScoreChance">
+                <br />
+
+                <label> Yahtzee </label>
+                <input type="text" disabled id = "gScoreYahtzee">
+                <br />
+
+                <label> Total Score </label>
+                <input type="text" disabled id = "gScoreTotal">
+                <br />
+
+
+            </div>
+
+            <div id = "grimSpace">
+            
+                <h2> Grim </h2>
+
+                <img class = "playerImages" src = "Images/GrimReaper.gif" alt="Grim Reaper Image">
+
+                <div id = "grimButton">
+
+                    <button type = "button" id = "start"> Accept Game </button>
+
+                    <p id = "grimTurn"> &nbsp; </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id = "ghostSide" >
+            <div id = "ghostSpace">
+
+                <h2 id = "youLabel"> &nbsp; </h2>    
+                
+                <img class = "playerImages" src="Images/GraveStone.gif" alt="Ghost Image"
+                 id = "graveImg">
+
+                <img class = "playerImages" src="Images/Ghost.gif" alt="Ghost Image"
+                 id = "ghostImg" hidden ="hidden">
+
+                <div id = "ghostRolls" >
+
+                        <button type = "button" id = "roll" hidden ="hidden"> Roll Dice </button>
+
+                        <button type = "button" id = "0" hidden ="hidden" class = "die"> 
+                                &nbsp; 
+                        </button>
+
+                        <button type = "button" id = "1" hidden ="hidden" class = "die"> 
+                                &nbsp; 
+                        </button>
+
+                        <button type = "button" id = "2" hidden ="hidden" class = "die"> 
+                                &nbsp; 
+                        </button>
+
+                        <button type = "button" id = "3" hidden ="hidden" class = "die"> 
+                                &nbsp; 
+                        </button>
+
+                        <button type = "button" id = "4" hidden ="hidden" class = "die"> 
+                            &nbsp; 
+                        </button>
+
+                        <p id = "rollNumber"> &nbsp; </p>
+        
+                </div>
+
+            </div>
+
+            <div id = "ghostScores" >
+
+                    <label> Ones </label>
+                    <input type="text"  id = "score1">
+                    <br />
+        
+                    <label> Twos </label>
+                    <input type="text"  id = "score2">
+                    <br />
+        
+                    <label> Threes </label>
+                    <input type="text" id = "score3">
+                    <br />
+        
+                    <label> Fours </label>
+                    <input type="text" id = "score4">
+                    <br />
+        
+                    <label> Fives </label>
+                    <input type="text" id = "score5">
+                    <br />
+        
+                    <label> Sixes </label>
+                    <input type="text" id = "score6">
+                    <br />
+
+                    <label> Bonus </label>
+                    <input type="text" id = "scoreBonus" disabled>
+                    <br />
+        
+                    <label> Three of a Kind </label>
+                    <input type="text" id = "scoreThreeKind">
+                    <br />
+        
+                    <label> Four of a Kind </label>
+                    <input type="text" id = "scoreFourKind">
+                    <br />
+        
+                    <label> Full House </label>
+                    <input type="text" id = "scoreFullHouse">
+                    <br />
+        
+                    <label> Small Straight </label>
+                    <input type="text" id = "scoreSmall" >
+                    <br />
+        
+                    <label> Large Straight </label>
+                    <input type="text" id = "scoreLarge">
+                    <br />
+        
+                    <label> Chance </label>
+                    <input type="text" id = "scoreChance">
+                    <br />
+        
+                    <label> Yahtzee </label>
+                    <input type="text" id = "scoreYahtzee">
+                    <br />
+        
+                    <label> Total Score </label>
+                    <input type="text" id = "scoreTotal" disabled>
+                    <br />
+        
+        
+                </div>
+
+            </div>
+
+    </div>
+
+    <div id = "rules">
+
+        <h1> Rules </h1>
+
+        <p1> You have died and now you must play the <strong> Grim </strong> for your chance to live again; he loves <strong> Yahtzee </strong>. 
+            The rules are that of your typical every day Yahtzee with just a one exception: The <strong> Grim </strong> does not
+            allow more than one Yahtzee (humans don't deserve to get lucky more than once). 
+            <br /> <br />
+
+            <span style = "text-decoration: underline"> Non-automatic Scores (you must choose) </span>
+            <br />
+            <br />
+
+            <strong> Ones: </strong> Roll as many ones as you can
+            <br/>
+            <strong> Twos: </strong> Roll as many twos as you can
+            <br/>
+            <strong> Threes: </strong> Roll as many threes as you can
+            <br/>
+            <strong> Fours: </strong> Roll as many fours as you can
+            <br/>
+            <strong> Fives: </strong> Roll as many fives as you can
+            <br/>
+            <strong> Sixes: </strong> Roll as many sixes as you can
+            <br/>
+            <strong> Three of a Kind: </strong> Roll three of the same number and recieve the sum
+            of all dice in points
+            <br />
+            <strong> Four of a Kind: </strong> Roll four of the same number and recive the sum of 
+            all dice in points
+            <br/>
+            <strong> Full House: </strong> Roll three of a kind and a pair, recieve 25 points
+            <br/>
+            <strong> Small Straight: </strong> Roll four sequential numbers and recieve 30 points
+            <br/>
+            <strong> Large Straight: </strong> Roll five sequential numbers and recieve 40 points
+            <br/>
+            <strong> Chance </strong> Dump your numbers if you have nothing else and recive the sum of all 
+            dice in points
+            <br/>
+            <strong> Yahtzee: </strong> Roll five of a kind and recive 50 points; no multiple yahtzees allowed
+            <br/>
+            <br />
+
+            <span style = "text-decoration: underline"> Automatic Scores </span>
+            <br />
+            <br>
+
+            <strong> Bonus: </strong> Recieve 35 points if your ones, twos,..., etc. totalled equals 63 points
+            or higher
+            <br/>
+            <strong> Total: </strong> The totalled final score that decides your fate
+            <br/>
+            <br />
+
+            <span style = "text-decoration: underline"> Extra </span>
+            <br />
+            <br>
+
+            <strong> Click on the ghost </strong> at anytime to change accessories
+            <br />
+            <strong> Click "roll" </strong> to roll new values <strong> and </strong> end your turn if all dice are selected
+            <br />
+            <strong> Click on a die </strong> to hold that value <strong> and </strong> click it again to let go of it
+
+
+
+        </p1>
+
+    </div>
+
+    <footer> &copy; Amy Dixon 2018 </footer>
+    
+</body>
+
+</html>
